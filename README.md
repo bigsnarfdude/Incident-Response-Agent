@@ -37,3 +37,7 @@ AI Models: Multi-LLMs (customizable for domain-specific use cases)
 Frameworks: Transformers, Ollama, LangChain
 
 Tools: Docker, Pandas, PyTorch, and more
+
+## 🌟 Your Incident Management Ally
+
+With IRA by your side, you’ll lead with confidence, communicate effectively, and support your team to succeed in the most challenging situations.
