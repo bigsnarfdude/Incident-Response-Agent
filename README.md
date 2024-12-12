@@ -44,6 +44,7 @@ With IRA by your side, you’ll lead with confidence, communicate effectively, a
 
 
 ## TODO:
+- local uses tavily_search need config switch for Gemini2 uses Google Search
 - integration to email, sms, slack, voice
 - integration to RAG - focused on tasking team, and communications. ability to upload analyse data for PII, risk analysis
 - MLLM integration
