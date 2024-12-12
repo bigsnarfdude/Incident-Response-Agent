@@ -1,8 +1,18 @@
-# IRA 🚀
+# IRA 🚀  
+**Cyber Incident Management Reimagined**  
 
-AI-Driven System for Streamlined Incident Response and Reliability Investigations
+If you are worried about leading or supporting a major cyber incident, **IRA (Intelligent Root-cause Analyzer)** is the tool and approach you need. Designed for the high-pressure environment of **Cyber Incident Management**, IRA focuses on the **non-technical challenges** faced by leaders, helping you and your team respond effectively and decisively.  
 
-IRA (Intelligent Root-cause Analyzer) is a cutting-edge AI-powered agent designed specifically for Incident Response (IR) scenarios. By combining heuristic-based retrieval with Multimodal Large Language Models (MLLM), IRA accelerates root cause identification and empowers teams to resolve incidents with unparalleled speed and accuracy.
+## 🌟 Why IRA?  
+When a cyber incident strikes, technical teams focus on detecting, analyzing, and neutralizing the attackers. However, maximizing their effectiveness requires **clear communication**, **effective management**, and **focused tasking**. IRA bridges the gap between leadership and technical response teams by:  
+
+- Ensuring the team stays focused on **remediating the incident**.  
+- Helping leaders **distill critical data** for decision-making and concise briefings.  
+- Providing structured frameworks for managing teams under extreme pressure.  
+- Facilitating seamless communication from hands-on teams to executives and boards.  
+
+IRA empowers teams to work like **investigative journalists**, pinpointing attackers with speed and precision, and enhances communication at all levels to ensure a coordinated response.  
+
 
 ## 🌟 Features
 
