@@ -60,5 +60,6 @@ With IRA by your side, you’ll lead with confidence, communicate effectively, a
 - local and frontier engine. currently testing MLLM via Gemini2
 - agent specific to network security ops analysis
 - agent specific to network traffic analysis
-- agent specific to language in network traffic and forensics analysis and exploit reconstruction and virus engine scoring 
+- agent specific to language in network traffic and forensics analysis and exploit reconstruction and virus engine scoring
+- internal speech writer? for press releases and leadership response
 
