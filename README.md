@@ -44,7 +44,7 @@ With IRA by your side, you’ll lead with confidence, communicate effectively, a
 
 
 TODO:
-- integration to email, sms, slack
+- integration to email, sms, slack, voice
 - integration to RAG - focused on tasking team, and communications. ability to upload analyse data for PII, risk analysis
 - MLLM integration
 - containment engine
@@ -54,4 +54,5 @@ TODO:
 - Recovery engine
 - Post-incident review engine
 - PIA engine
+- local and frontier engine. currently testing MLLM via Gemini2
 
