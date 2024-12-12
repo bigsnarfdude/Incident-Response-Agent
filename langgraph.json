@@ -1,0 +1,11 @@
+{
+    "dockerfile_lines": [],
+    "graphs": {
+      "incident_response_agent": "./src/incident_response_agent/incident_response_agent.py:graph"
+    },
+    "python_version": "3.11",
+    "env": "./.env",
+    "dependencies": [
+      "."
+    ]
+  }
