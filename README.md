@@ -2,7 +2,7 @@
 
 AI-Driven System for Streamlined Incident Response and Reliability Investigations
 
-IRA (Intelligent Root-cause Analyzer) is a cutting-edge AI-powered agent designed specifically for Incident Response (IR) scenarios. By combining heuristic-based retrieval with multi-large language model (MLLM) ranking, IRA accelerates root cause identification and empowers teams to resolve incidents with unparalleled speed and accuracy.
+IRA (Intelligent Root-cause Analyzer) is a cutting-edge AI-powered agent designed specifically for Incident Response (IR) scenarios. By combining heuristic-based retrieval with By leveraging Multimodal Large Language Models (MLLM), IRA accelerates root cause identification and empowers teams to resolve incidents with unparalleled speed and accuracy.
 
 ## 🌟 Features
 🧠 AI-Assisted Incident Analysis: Tailored for Incident Response to quickly identify and prioritize root causes.
