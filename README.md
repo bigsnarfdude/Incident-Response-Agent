@@ -16,7 +16,7 @@ IRA (Intelligent Root-cause Analyzer) is a cutting-edge AI-powered agent designe
 🤝 Customizable & Scalable: Adapts to diverse system architectures and incident types.
 
 
-### 🔧 Tech Stack
+## 🔧 Tech Stack
 
 Languages: Python
 
