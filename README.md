@@ -41,3 +41,17 @@ Tools: Docker, Pandas, PyTorch, and more
 ## 🌟 Your Incident Management Ally
 
 With IRA by your side, you’ll lead with confidence, communicate effectively, and support your team to succeed in the most challenging situations.
+
+
+TODO:
+- integration to email, sms, slack
+- integration to RAG - focused on tasking team, and communications. ability to upload analyse data for PII, risk analysis
+- MLLM integration
+- containment engine
+- Preparation engine
+- IR Detection and analysis engine
+- Eradication engine
+- Recovery engine
+- Post-incident review engine
+- PIA engine
+
