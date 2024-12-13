@@ -3,7 +3,8 @@
 
 If you are worried about leading or supporting a major cyber incident, **IRA (Intelligent Root-cause Analyzer)** is the tool and approach you need. Designed for the high-pressure environment of **Cyber Incident Management**, IRA focuses on the **non-technical challenges** faced by leaders, helping you and your team respond effectively and decisively.  
 
-TLDR; Here's a report produced by agent: https://docs.google.com/document/d/e/2PACX-1vTMmT84Ts8VQrEXvms3r_dIacgGtxqtK2p6wlqj3lThP8yD6LkEnz_gBhK3dIk0vmqDoHJQLje9_v8r/pub
+# TL;DR 
+Here's a report produced by agent: https://docs.google.com/document/d/e/2PACX-1vTMmT84Ts8VQrEXvms3r_dIacgGtxqtK2p6wlqj3lThP8yD6LkEnz_gBhK3dIk0vmqDoHJQLje9_v8r/pub
 
 ## 🌟 Why IRA?  
 When a cyber incident strikes, technical teams focus on detecting, analyzing, and neutralizing the attackers. However, maximizing their effectiveness requires **clear communication**, **effective management**, and **focused tasking**. IRA bridges the gap between leadership and technical response teams by:  
