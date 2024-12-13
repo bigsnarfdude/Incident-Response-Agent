@@ -48,6 +48,7 @@ With IRA by your side, you’ll lead with confidence, communicate effectively, a
 - citation: https://notebooklm.google/ 
 - local uses tavily_search need config switch for Gemini2 uses Google Search
 - generate flow charts, instructions and visual aids like pictures of instructions to go with step by step instructions (like receipes with pictures of ingredients and cooking pics)
+- AI page outs and messages and voice mails with instructions and follow up info directly from agent to IR peeps 
 - integration to email, sms, slack, voice
 - integration to RAG - focused on tasking team, and communications. ability to upload analyse data for PII, risk analysis
 - MLLM integration
