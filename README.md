@@ -11,6 +11,25 @@ If you are worried about leading or supporting a major cyber incident, **IRA (In
 
 
 ## 🌟 Why IRA?  
+There's a growing connection between XAI and computer forensics (CF), particularly as AI plays a larger role in cybersecurity and digital investigations. Here's how XAI becomes relevant in CF:
+
+* **Understanding AI-driven tools:** CF increasingly uses AI for tasks like malware detection, anomaly identification, and image analysis. XAI helps investigators understand *why* an AI tool flagged something as suspicious, making the findings more reliable and defensible in court.
+
+* **Explaining complex digital evidence:** Imagine an AI tool identifies a pattern of network traffic as indicative of an attack. XAI can help explain which features of that traffic led to the conclusion, providing more context and potentially uncovering the attacker's methods.
+
+* **Building trust in digital evidence:** If AI plays a part in analyzing evidence, its conclusions might be challenged in court. XAI provides transparency, showing how the AI arrived at its findings and increasing confidence in the results.
+
+* **Improving AI tools for CF:** By understanding how AI models work, CF specialists can refine and improve these tools, making them more effective for digital investigations.
+
+
+**Think of it this way:**
+
+* **Traditional CF:** An investigator manually examines system logs, file metadata, and network traffic to reconstruct events and find evidence.
+* **AI-augmented CF:** AI tools help automate analysis, but can be "black boxes."
+* **XAI-enhanced CF:** XAI adds a layer of transparency, allowing investigators to understand the AI's reasoning and use its findings more effectively.
+
+Essentially, XAI helps bridge the gap between powerful AI capabilities and the need for human-understandable explanations in the legal and investigative context of computer forensics.
+
 When a cyber incident strikes, technical teams focus on detecting, analyzing, and neutralizing the attackers. However, maximizing their effectiveness requires **clear communication**, **effective management**, and **focused tasking**. IRA bridges the gap between leadership and technical response teams by:  
 
 - Ensuring the team stays focused on **remediating the incident**.  
