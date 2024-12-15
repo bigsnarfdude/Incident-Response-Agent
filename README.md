@@ -1,7 +1,7 @@
 # IRA 🚀  
-**Cyber Incident Management Reimagined**  
+**Cyber Incident Management Reimagined - Intelligence-driven incident response**  
 
-If you are worried about leading or supporting a major cyber incident, **IRA (Intelligent Root-cause Analyzer)** is the tool and approach you need. Designed for the high-pressure environment of **Cyber Incident Management**, IRA focuses on the **non-technical challenges** faced by leaders, helping you and your team respond effectively and decisively.  
+**IRA (Intelligent Root-cause Analyzer)** is the tool and approach you need. Designed for the high-pressure environment of **Cyber Incident Management**, IRA focuses on the **non-technical challenges** faced by leaders, helping you and your team respond effectively and decisively.  
 
 # TL;DR   
 ## IRA research space
