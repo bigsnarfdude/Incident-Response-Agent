@@ -5,9 +5,10 @@ If you are worried about leading or supporting a major cyber incident, **IRA (In
 
 # TL;DR 
 
-- Here's a IR report produced by agent: https://docs.google.com/document/d/e/2PACX-1vTMmT84Ts8VQrEXvms3r_dIacgGtxqtK2p6wlqj3lThP8yD6LkEnz_gBhK3dIk0vmqDoHJQLje9_v8r/pub
-- Here's an xAI vs DFIR report: https://docs.google.com/document/d/e/2PACX-1vRWSCS-neleLyAqem3vqssJMekVdjsfK6UQTCrifEoFiruvEHUAenffEv6egLi0bmSA9SdiCotwiL_9/pub
-- Here's an xAI explainer: https://docs.google.com/document/d/e/2PACX-1vTXfZ9Gxx93JQPBb_-Pkoby40H-JxflyWSEoeceoMlNZRwhHUImSgAb-7KKLpnvS3oRTjb2cT8wMmhf/pub
+- Here's an IR report produced by agent: https://docs.google.com/document/d/e/2PACX-1vTMmT84Ts8VQrEXvms3r_dIacgGtxqtK2p6wlqj3lThP8yD6LkEnz_gBhK3dIk0vmqDoHJQLje9_v8r/pub
+- Here's a xAI vs DFIR report: https://docs.google.com/document/d/e/2PACX-1vRWSCS-neleLyAqem3vqssJMekVdjsfK6UQTCrifEoFiruvEHUAenffEv6egLi0bmSA9SdiCotwiL_9/pub
+- Here's a xAI explainer: https://docs.google.com/document/d/e/2PACX-1vTXfZ9Gxx93JQPBb_-Pkoby40H-JxflyWSEoeceoMlNZRwhHUImSgAb-7KKLpnvS3oRTjb2cT8wMmhf/pub
+- Here's a AI planner report: https://docs.google.com/document/d/e/2PACX-1vRIghXQFSCna-bIhJcYYTLdHaaImUemFTmTA5hBDdfp9t6RWPlJarG98AB8SxWcm1duCR8qeaZj3uPR/pub
 
 
 ## 🌟 Why IRA?  
