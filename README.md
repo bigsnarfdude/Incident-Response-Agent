@@ -95,3 +95,4 @@ With IRA by your side, you’ll lead with confidence, communicate effectively, a
 - agent specific to language in network traffic and forensics analysis and exploit reconstruction and virus engine scoring
 - internal speech writer? for press releases and leadership response
 - AI Safety & Red Teaming training internal related to DFIR
+- Hallucination Checker - GPT based 2nd opinion, 3rd Opinion?
