@@ -96,3 +96,4 @@ With IRA by your side, you’ll lead with confidence, communicate effectively, a
 - internal speech writer? for press releases and leadership response
 - AI Safety & Red Teaming training internal related to DFIR
 - Hallucination Checker - GPT based 2nd opinion, 3rd Opinion?
+- invent new lanaguage for turing complete, take existing implementation and rewrite in new lanaguage, new compiler for new language and deploy on hardware for encyption
