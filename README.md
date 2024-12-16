@@ -97,3 +97,4 @@ With IRA by your side, you’ll lead with confidence, communicate effectively, a
 - AI Safety & Red Teaming training internal related to DFIR
 - Hallucination Checker - GPT based 2nd opinion, 3rd Opinion?
 - invent new lanaguage for turing complete, take existing implementation and rewrite in new lanaguage, new compiler for new language and deploy on hardware for encyption
+- enforce human-in-the-loop agent review and approval for all activity
