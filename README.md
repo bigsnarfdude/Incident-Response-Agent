@@ -76,6 +76,7 @@ With IRA by your side, you’ll lead with confidence, communicate effectively, a
 - citation: https://arxiv.org/html/2410.04343v1
 - citation: https://notebooklm.google/
 - *** Gemini Live Voice Bidirectional API so I can talk to Agent via voice and have information show up on Laptop ***
+- https://support.google.com/notebooklm/answer/15678219
 - local uses tavily_search need config switch for Gemini2 uses Google Search
 - generate flow charts, instructions and visual aids like pictures of instructions to go with step by step instructions (like receipes with pictures of ingredients and cooking pics)
 - AI page outs and messages and voice mails with instructions and follow up info directly from agent to IR peeps 
