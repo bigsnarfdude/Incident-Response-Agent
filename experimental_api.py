@@ -6,6 +6,16 @@ import json
 import os
 from markitdown import MarkItDown
 
+"""
+from markitdown import MarkItDown
+from openai import OpenAI
+
+client = OpenAI()
+md = MarkItDown(llm_client=client, llm_model="gpt-4o")
+result = md.convert("example.jpg")
+print(result.text_content)
+"""
+
 app = Flask(__name__)
 markitdown = MarkItDown()
 
