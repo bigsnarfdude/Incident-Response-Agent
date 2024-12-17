@@ -11,6 +11,7 @@
 - Here's a xAI explainer: https://docs.google.com/document/d/e/2PACX-1vTXfZ9Gxx93JQPBb_-Pkoby40H-JxflyWSEoeceoMlNZRwhHUImSgAb-7KKLpnvS3oRTjb2cT8wMmhf/pub
 - Here's a AI planner report: https://docs.google.com/document/d/e/2PACX-1vRIghXQFSCna-bIhJcYYTLdHaaImUemFTmTA5hBDdfp9t6RWPlJarG98AB8SxWcm1duCR8qeaZj3uPR/pub
 - Here's a Tool AI report: https://docs.google.com/document/d/e/2PACX-1vS5yj_z0WTG-QJBVKM9jG74cdNLLInetZANyk8jIM4puylD-0mt9_TKkeaIZjdvCjnXxNz1MnOkTXW4/pub
+- Here's a Microsoft DFIR report: https://docs.google.com/document/d/e/2PACX-1vQVoItBguHg3ugZTtg7u-urMIcsQeJjOcinx-lj5kG-m5MewHHdHSzP-9FaAeL-8-m_YOMQ_HX5FvE_/pub
 
 
 ## 🌟 Why IRA?  
