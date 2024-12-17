@@ -101,3 +101,14 @@ With IRA by your side, you’ll lead with confidence, communicate effectively, a
 - invent new lanaguage for turing complete, take existing implementation and rewrite in new lanaguage, new compiler for new language and deploy on hardware for encyption
 - enforce human-in-the-loop agent review and approval for all activity
 - documents to markdown https://github.com/microsoft/markitdown
+- Policy API - manage policy 
+- Data API - evaluate rules and retrieve data
+- Query API - execute adhoc queries
+- Compile API - access Rego’s Partial Evaluation functionality
+- Health API - access instance operational health information
+- Config API - view instance configuration
+- Status API - view instance status state
+- search api
+- analysis api
+- communications api
+- document converstion api
