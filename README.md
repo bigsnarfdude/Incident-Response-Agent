@@ -109,6 +109,6 @@ With IRA by your side, you’ll lead with confidence, communicate effectively, a
 - Config API - view instance configuration
 - Status API - view instance status state
 - search api
-- analysis api
-- communications api
+- analysis api   ### see phi4 notebook experiments api
+- communications api ### send to notebookllm api?
 - document converstion api  #### experimental_api.py
