@@ -112,3 +112,4 @@ With IRA by your side, you’ll lead with confidence, communicate effectively, a
 - analysis api   ### see phi4 notebook experiments api
 - communications api ### send to notebookllm api?
 - document converstion api  #### experimental_api.py
+- 2 stage LLM english vs french classifier API ## language_classifier-api.py
