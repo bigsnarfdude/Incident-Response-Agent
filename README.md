@@ -170,3 +170,4 @@ volatility -f memory.dump windows.registry.printkey
 - Implement confidence scoring for IOC prioritization
 - Consider integration with MISP or other threat intelligence platforms
 - Automate common analysis workflows where possible
+- https://gist.github.com/bigsnarfdude/5af050d145550fa92ed9b0d8e8beed09
