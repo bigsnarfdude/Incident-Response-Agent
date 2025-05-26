@@ -1,6 +1,6 @@
 # Memory Forensics & IOC Collection for Incident Response
 
-Memory analysis in forensics, also known as memory forensics or live analysis, focuses on capturing and analyzing a computer's memory (RAM) to uncover digital artifacts and evidence of malicious activity. This is crucial because many advanced threats operate solely in memory, leaving little to no footprint on the hard drive.
+Live Memory analysis in forensics focuses on capturing and analyzing a computer's memory (RAM) to uncover digital artifacts and evidence of compromise. Many advanced threats operate solely in memory, leaving little to no footprint on the hard drive.
 
 ## Why Memory Forensics Matters
 
