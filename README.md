@@ -198,7 +198,6 @@ Storage limits
 Maximum file size: 32 MB per file
 Total storage: 100 GB per organization
 
-Web Search via API for claude code install as a tool
-https://www.anthropic.com/news/web-search-api
-​
+Web Search via API for claude code install as a tool $10 for 1000
+https://docs.anthropic.com/en/docs/agents-and-tools/tool-use/web-search-tool
 
