@@ -177,8 +177,8 @@ volatility -f memory.dump windows.registry.printkey
 - https://docs.anthropic.com/en/docs/agents-and-tools/tool-use/code-execution-tool
 
 Resource limits
-Memory: 1GiB RAM
-Disk space: 5GiB workspace storage
+Memory: 1 GB RAM
+Disk space: 5 GB workspace storage
 CPU: 1 CPU
 Execution timeout: Execution is limited per messages request and can be controlled with the max_execution_duration parameter
 Container Expiration: After 1 hour of inactivity, the container can’t be accessed again
