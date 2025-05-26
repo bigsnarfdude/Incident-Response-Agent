@@ -201,3 +201,6 @@ Total storage: 100 GB per organization
 Web Search via API for claude code install as a tool $10 for 1000
 https://docs.anthropic.com/en/docs/agents-and-tools/tool-use/web-search-tool
 
+Batch processing for 50 percent off
+https://docs.anthropic.com/en/docs/build-with-claude/batch-processing
+
