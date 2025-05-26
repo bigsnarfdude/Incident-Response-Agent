@@ -197,5 +197,8 @@ https://docs.anthropic.com/en/docs/build-with-claude/files
 Storage limits
 Maximum file size: 32 MB per file
 Total storage: 100 GB per organization
+
+Web Search via API for claude code install as a tool
+https://www.anthropic.com/news/web-search-api
 ​
 
