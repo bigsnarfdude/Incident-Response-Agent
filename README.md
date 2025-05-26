@@ -182,5 +182,14 @@ Disk space: 5 GB workspace storage
 CPU: 1 CPU
 Execution timeout: Execution is limited per messages request and can be controlled with the max_execution_duration parameter
 Container Expiration: After 1 hour of inactivity, the container can’t be accessed again
+
+Pre-installed libraries
+The sandboxed Python environment includes these commonly used libraries:
+
+Data Science: pandas, numpy, scipy, scikit-learn, statsmodels
+Visualization: matplotlib, seaborn
+File Processing: pyarrow, openpyxl, xlrd, pillow
+Math & Computing: sympy, mpmath
+Utilities: tqdm, python-dateutil, pytz, joblib
 ​
 
