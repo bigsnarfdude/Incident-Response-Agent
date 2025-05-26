@@ -171,4 +171,7 @@ volatility -f memory.dump windows.registry.printkey
 - Consider integration with MISP or other threat intelligence platforms
 - Automate common analysis workflows where possible
 - https://gist.github.com/bigsnarfdude/5af050d145550fa92ed9b0d8e8beed09
+- MCP V3
 - https://github.com/bornpresident/Volatility-MCP-Server
+- Claude Code execution tool
+- https://docs.anthropic.com/en/docs/agents-and-tools/tool-use/code-execution-tool  
