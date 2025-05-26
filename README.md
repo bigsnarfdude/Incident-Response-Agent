@@ -191,5 +191,11 @@ Visualization: matplotlib, seaborn
 File Processing: pyarrow, openpyxl, xlrd, pillow
 Math & Computing: sympy, mpmath
 Utilities: tqdm, python-dateutil, pytz, joblib
+
+Files API lets you upload and manage files to use with the Anthropic API without re-uploading content with each request
+https://docs.anthropic.com/en/docs/build-with-claude/files
+Storage limits
+Maximum file size: 32 MB per file
+Total storage: 100 GB per organization
 ​
 
