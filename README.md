@@ -182,6 +182,7 @@ volatility -f memory.dump windows.registry.printkey
 - https://github.com/bornpresident/Volatility-MCP-Server
 - Claude Code execution tool
 - https://docs.anthropic.com/en/docs/agents-and-tools/tool-use/code-execution-tool
+- https://gist.github.com/bigsnarfdude/9ddec717ce68f267f51fdee3dcdad9f0
 
 Resource limits
 Memory: 1 GB RAM
