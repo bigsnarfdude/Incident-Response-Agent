@@ -1,5 +1,12 @@
 # Memory Forensics & IOC Collection for Incident Response
 
+```
+
+Memory Dump → Preprocessing → Feature Extraction → Claude Analysis → Response Actions
+SIEM Alert → Webhook → Claude Analysis → Response Actions
+
+```
+
 Live Memory analysis in forensics focuses on capturing and analyzing a computer's memory (RAM) to uncover digital artifacts and evidence of compromise. Many advanced threats operate solely in memory, leaving little to no footprint on the hard drive.
 
 ## Why Memory Forensics Matters
