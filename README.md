@@ -1,214 +1,145 @@
-# Memory Forensics & IOC Collection for Incident Response
+# Incident Response Agent: Automated Memory Forensics & IOC Analysis
+
+An AI-powered incident response system that automatically analyzes memory dumps, extracts IOCs, and provides actionable threat intelligence using Claude AI.
 
 ```
-
-Memory Dump → Preprocessing → Feature Extraction → Claude Analysis → Response Actions
-SIEM Alert → Webhook → Claude Analysis → Response Actions
-
+GRR Remote Collection → Memory Dump → Volatility Analysis → IOC Extraction → Claude AI Analysis → Automated Response
 ```
 
-Live Memory analysis in forensics focuses on capturing and analyzing a computer's memory (RAM) to uncover digital artifacts and evidence of compromise. Many advanced threats operate solely in memory, leaving little to no footprint on the hard drive.
+## 🎯 Key Features
 
-## Why Memory Forensics Matters
+- **Automated Memory Analysis**: GRR webhook triggers automatic processing
+- **IOC Extraction**: Identifies suspicious processes, network connections, and code injections
+- **AI-Powered Threat Assessment**: Claude analyzes findings and provides risk scores
+- **Automated Response**: High-risk detections trigger hunts and containment actions
+- **Scalable Architecture**: Queue-based processing handles multiple incidents
 
-- **Advanced persistent threats (APTs)** often operate entirely in memory
-- **Fileless malware** leaves minimal disk artifacts
-- **Live system state** reveals active network connections, running processes, and injected code
-- **IOC extraction** enables detection of compromised systems across the environment
+## 🏗️ Architecture Overview
 
-## Memory Acquisition Checklist
+```mermaid
+graph TD
+    A[GRR Agents] -->|Memory Acquisition| B[GRR Server]
+    B -->|Webhook| C[Analysis Service]
+    C -->|Download| D[Memory Dumps]
+    D -->|Process| E[Volatility 3]
+    E -->|Extract| F[IOCs]
+    F -->|Analyze| G[Claude AI]
+    G -->|Risk Score| H{Decision Engine}
+    H -->|High Risk| I[Automated Response]
+    H -->|Low Risk| J[Log & Monitor]
+    I --> K[Create Hunts]
+    I --> L[Isolate Systems]
+    I --> M[Alert SOC]
+```
+
+## 📋 Implementation Plan
+
+### Phase 1: Infrastructure Setup (Week 1)
+- [ ] Deploy GRR server and configure API access
+- [ ] Install GRR agents on target systems
+- [ ] Set up analysis server with Volatility 3
+- [ ] Configure network connectivity and firewall rules
+
+### Phase 2: Integration Development (Week 2)
+- [ ] Deploy `grr_memory_analyzer.py` service
+- [ ] Configure GRR webhooks for flow completion
+- [ ] Test Volatility plugin execution
+- [ ] Verify Claude AI integration
+
+### Phase 3: Automation & Testing (Week 3)
+- [ ] Create GRR hunt artifacts for common threats
+- [ ] Test end-to-end workflow with sample malware
+- [ ] Tune IOC extraction rules
+- [ ] Calibrate risk scoring thresholds
+
+### Phase 4: Production Deployment (Week 4)
+- [ ] Create systemd service for analyzer
+- [ ] Implement monitoring and alerting
+- [ ] Integrate with SIEM/SOAR platforms
+- [ ] Document runbooks and procedures
+
+## 🚀 Quick Start
 
 ### Prerequisites
-- [ ] Administrative/root privileges on target system
-- [ ] Sufficient disk space (equal to system RAM size)
-- [ ] Memory acquisition tool downloaded and verified
-- [ ] Documentation template ready (timestamp, system info, tool version)
+- Python 3.9+
+- GRR server (3.4.5+)
+- Volatility 3
+- Claude API access (via Ollama or Anthropic API)
 
-### Acquisition Steps
-- [ ] Document system state (running processes, network connections)
-- [ ] Run memory acquisition tool as administrator
-- [ ] Verify dump file integrity (if tool supports it)
-- [ ] Calculate and record file hash (MD5/SHA256)
-- [ ] Document acquisition metadata (time, tool, operator)
-- [ ] Secure transfer dump file to analysis system
+### Installation
 
-## Tools & Commands
-
-### Memory Acquisition
+1. **Clone the repository**
 ```bash
-# WinPmem (Recommended)
-winpmem.exe C:\evidence\memory_dump.raw
-
-# DumpIt (Alternative)
-DumpIt.exe
-
-# Linux Memory Acquisition
-sudo insmod lime.ko "path=/tmp/memory.lime format=lime"
+git clone https://github.com/yourusername/incident-response-agent.git
+cd incident-response-agent
 ```
 
-### Volatility 3 Analysis Commands
+2. **Install dependencies**
 ```bash
-# System Information
-volatility -f memory.dump windows.info
-
-# Process Analysis
-volatility -f memory.dump windows.pslist
-volatility -f memory.dump windows.pstree
-volatility -f memory.dump windows.cmdline
-
-# Network Analysis
-volatility -f memory.dump windows.netscan
-volatility -f memory.dump windows.netstat
-
-# Malware Detection
-volatility -f memory.dump windows.malfind
-volatility -f memory.dump windows.hollowfind
-
-# File System Analysis
-volatility -f memory.dump windows.filescan
-volatility -f memory.dump windows.handles
-
-# Registry Analysis (Windows)
-volatility -f memory.dump windows.registry.hivelist
-volatility -f memory.dump windows.registry.printkey
+pip install -e .
 ```
 
-## IOC Extraction Checklist
-
-### Process-Based IOCs
-- [ ] Suspicious process names and paths
-- [ ] Unusual parent-child process relationships
-- [ ] Processes with no disk backing (hollow processes)
-- [ ] Injected code in legitimate processes
-- [ ] Command line arguments and parameters
-
-### Network-Based IOCs
-- [ ] Unusual outbound connections
-- [ ] Connections to known malicious IPs/domains
-- [ ] Suspicious listening ports
-- [ ] DNS queries to suspicious domains
-- [ ] HTTP/HTTPS user agents
-
-### File-Based IOCs
-- [ ] Suspicious file paths and names
-- [ ] Files in unusual locations
-- [ ] Temporary files with random names
-- [ ] Recently modified system files
-- [ ] Executable files in non-executable directories
-
-### Registry-Based IOCs (Windows)
-- [ ] Persistence mechanisms (Run keys, Services)
-- [ ] Modified system settings
-- [ ] Unusual registry values
-- [ ] Recently created registry keys
-- [ ] Suspicious registry timestamps
-
-## IOC Storage & Management
-
-### Structured IOC Format
-```json
-{
-  "ioc_type": "ip_address|domain|file_hash|process_name",
-  "value": "192.168.1.100",
-  "confidence": "high|medium|low",
-  "first_seen": "2025-01-15T10:30:00Z",
-  "source": "memory_analysis",
-  "description": "C2 server communication",
-  "tags": ["apt", "malware", "c2"]
-}
+3. **Configure environment**
+```bash
+export GRR_API_ENDPOINT="http://grr-server:8000"
+export GRR_USERNAME="admin"
+export GRR_PASSWORD="your-password"
+export VOLATILITY_PATH="/usr/local/bin/volatility3"
 ```
 
-### RAG Integration Considerations
-- [ ] Standardize IOC format for consistent ingestion
-- [ ] Tag IOCs with threat intelligence context
-- [ ] Link related IOCs (campaign, malware family)
-- [ ] Include confidence levels and source attribution
-- [ ] Maintain temporal relationships between IOCs
+4. **Start the analyzer service**
+```bash
+python grr_memory_analyzer.py
+```
 
-## Analysis Workflow
+## 🔧 Configuration
 
-### 1. Initial Triage
-- [ ] System information and timeline
-- [ ] Process tree analysis
-- [ ] Network connections review
-- [ ] Quick malware scan (malfind)
+### GRR Webhook Setup
+```bash
+# Configure GRR to send webhooks on flow completion
+grr_config_updater set Webhooks.flow_completions_url http://analyzer:8080/grr/webhook
+```
 
-### 2. Deep Analysis
-- [ ] Detailed process analysis
-- [ ] Memory string analysis
-- [ ] Registry examination
-- [ ] File system artifacts
-- [ ] Timeline reconstruction
+### Volatility Plugins
+The system automatically runs these plugins:
+- `windows.info` - System information
+- `windows.pslist` - Process listing
+- `windows.netscan` - Network connections
+- `windows.malfind` - Injected code detection
+- `windows.cmdline` - Command line arguments
 
-### 3. IOC Generation
-- [ ] Extract and validate IOCs
-- [ ] Correlate with threat intelligence
-- [ ] Document confidence levels
-- [ ] Format for sharing (STIX/TAXII, JSON, CSV)
+### Risk Scoring
+- **0-30**: Low risk - Normal activity
+- **31-69**: Medium risk - Suspicious activity requiring investigation
+- **70-100**: High risk - Active compromise, immediate action required
 
-### 4. Response Actions
-- [ ] Search for IOCs across environment
-- [ ] Update detection rules
-- [ ] Block malicious indicators
-- [ ] Document lessons learned
+## 📊 API Endpoints
 
-## Best Practices
+- `POST /grr/webhook` - Receives GRR flow notifications
+- `GET /analysis/status/{analysis_id}` - Check analysis results
 
-- **Speed vs. Stealth**: Balance acquisition speed with operational security
-- **Chain of Custody**: Maintain detailed documentation throughout process
-- **Tool Verification**: Validate tools and their integrity before use
-- **Multiple Sources**: Correlate memory analysis with other forensic sources
-- **Continuous Learning**: Stay updated with latest threats and techniques
+## 🛡️ Security Considerations
 
-## Common Volatility Plugins Reference
+- All memory dumps are processed in isolated environments
+- API communications use authentication
+- Sensitive data is not logged
+- Analysis results are stored encrypted
 
-| Plugin | Purpose | Example Output |
-|--------|---------|----------------|
-| `windows.pslist` | List running processes | PID, PPID, process name, creation time |
-| `windows.netscan` | Network connections | Local/remote addresses, ports, PIDs |
-| `windows.malfind` | Detect injected code | Suspicious memory regions, protection flags |
-| `windows.filescan` | Open file handles | File paths, PIDs, access permissions |
-| `windows.cmdline` | Process command lines | Full command line arguments |
+## 🤝 Contributing
 
-## Notes for Claude Code Integration
+1. Fork the repository
+2. Create a feature branch
+3. Commit your changes
+4. Push to the branch
+5. Create a Pull Request
 
-- Store IOCs in structured format (JSON/YAML) for easy parsing
-- Use consistent tagging scheme for automated threat hunting
-- Implement confidence scoring for IOC prioritization
-- Consider integration with MISP or other threat intelligence platforms
-- Automate common analysis workflows where possible
-- https://gist.github.com/bigsnarfdude/5af050d145550fa92ed9b0d8e8beed09
-- MCP V3
-- https://github.com/bornpresident/Volatility-MCP-Server
-- Claude Code execution tool
-- https://docs.anthropic.com/en/docs/agents-and-tools/tool-use/code-execution-tool
-- https://gist.github.com/bigsnarfdude/9ddec717ce68f267f51fdee3dcdad9f0
+## 📝 License
 
-Resource limits
-Memory: 1 GB RAM
-Disk space: 5 GB workspace storage
-CPU: 1 CPU
-Execution timeout: Execution is limited per messages request and can be controlled with the max_execution_duration parameter
-Container Expiration: After 1 hour of inactivity, the container can’t be accessed again
+MIT License - See LICENSE file for details
 
-Pre-installed libraries
-The sandboxed Python environment includes these commonly used libraries:
+## 🔗 Resources
 
-Data Science: pandas, numpy, scipy, scikit-learn, statsmodels
-Visualization: matplotlib, seaborn
-File Processing: pyarrow, openpyxl, xlrd, pillow
-Math & Computing: sympy, mpmath
-Utilities: tqdm, python-dateutil, pytz, joblib
-
-Files API lets you upload and manage files to use with the Anthropic API without re-uploading content with each request
-https://docs.anthropic.com/en/docs/build-with-claude/files
-Storage limits
-Maximum file size: 32 MB per file
-Total storage: 100 GB per organization
-
-Web Search via API for claude code install as a tool $10 for 1000
-https://docs.anthropic.com/en/docs/agents-and-tools/tool-use/web-search-tool
-
-Batch processing for 50 percent off
-https://docs.anthropic.com/en/docs/build-with-claude/batch-processing
-
+- [GRR Documentation](https://grr-doc.readthedocs.io/)
+- [Volatility 3 Documentation](https://volatility3.readthedocs.io/)
+- [Claude AI Documentation](https://docs.anthropic.com/)
+- [Memory Forensics Cheat Sheet](https://github.com/volatilityfoundation/volatility/wiki/Command-Reference)
