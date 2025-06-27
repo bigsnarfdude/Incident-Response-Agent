@@ -1,6 +1,6 @@
 # Incident Response Agent: Automated Memory Forensics & IOC Analysis
 
-An AI-powered incident response system that automatically analyzes memory dumps, extracts IOCs, and provides actionable threat intelligence using Claude AI.
+An AI-powered incident response system that automatically analyzes memory dumps, extracts IOCs, and provides actionable threat intelligence using Claude AI. or new https://developers.googleblog.com/en/introducing-gemma-3n-developer-guide/
 
 ```
 GRR Remote Collection → Memory Dump → Volatility Analysis → IOC Extraction → Claude AI Analysis → Automated Response
