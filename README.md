@@ -2,6 +2,15 @@
 
 An AI-powered incident response system that automatically analyzes memory dumps, extracts IOCs, and provides actionable threat intelligence using Claude AI. or new https://developers.googleblog.com/en/introducing-gemma-3n-developer-guide/
 
+Been using claude code as UNIX utility to pipe logs like unix utility
+```
+get-gcp-logs 1uhd832d |
+claude -p "correlate errors + commits" \
+--output-format=json |
+jq '. result'
+```
+
+
 ```
 GRR Remote Collection → Memory Dump → Volatility Analysis → IOC Extraction → Claude AI Analysis → Automated Response
 ```
