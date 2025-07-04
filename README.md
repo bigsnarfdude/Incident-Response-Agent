@@ -10,6 +10,8 @@ claude -p "correlate errors + commits" \
 jq '. result'
 ```
 
+https://gist.github.com/bigsnarfdude/3b83f0135c0e5639e77dc49b9806cc3d
+
 
 ```
 GRR Remote Collection → Memory Dump → Volatility Analysis → IOC Extraction → Claude AI Analysis → Automated Response
