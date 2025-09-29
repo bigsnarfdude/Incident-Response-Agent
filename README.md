@@ -2,7 +2,7 @@
 
 An AI-powered incident response system that automatically analyzes memory dumps, extracts IOCs, and provides actionable threat intelligence using Claude 4.5 AI. 
 
-Been using claude code as UNIX utility to pipe logs like unix utility
+Been using claude code as UNIX utility to pipe logs like unix utility. Also do root cause investigation and help detect exfil dns ops.
 ```
 get-gcp-logs 1uhd832d |
 claude -p "correlate errors + commits" \
