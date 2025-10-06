@@ -5,6 +5,7 @@ OK so been using CC for building tools for claude to use to parse and analyse da
 of data is harder than CC "eyeballing" data and finding patterns. CC is really good at figuring out higher level patterns and just goes for it instead of building
 tooling. but the eyeball is hard for deterministic outputs. So we will automate self-investigating agent work with common primative tools for investigation data.
 
+
 Been using claude code as UNIX utility to pipe logs like unix utility. Also do root cause investigation and help detect exfil dns ops.
 ```
 get-gcp-logs 1uhd832d |
