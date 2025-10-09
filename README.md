@@ -6,7 +6,7 @@ of data is harder than CC "eyeballing" data and finding patterns. CC is really g
 tooling. but the eyeball is hard for deterministic outputs. So we will automate self-investigating agent work with common primative tools for investigation data.
 
 
-Been using claude code as UNIX utility to pipe logs like unix utility. Also do root cause investigation and help detect exfil dns ops.
+Been using claude code as UNIX utility to pipe logs like unix utility. Also do root cause investigation and help detect exfil dns ops. Agent SDK?
 ```
 get-gcp-logs 1uhd832d |
 claude -p "correlate errors + commits" \
